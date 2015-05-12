@@ -18,5 +18,11 @@ var game = {
 	},
 	markField: function(x, y) {
 		this.table[y][x] = this.activePlayerIndex;
+
+		if (this.activePlayerIndex == 0) {
+			this.activePlayerIndex = 1;
+		} else {
+			this.activePlayerIndex = 0;
+		}
 	}
 };
