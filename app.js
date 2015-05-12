@@ -15,5 +15,8 @@ var game = {
 			console.log('Game started');
 			this.activePlayerIndex = 0;
 		}
+	},
+	markField: function(x, y) {
+		this.table[y][x] = this.activePlayerIndex;
 	}
 };
