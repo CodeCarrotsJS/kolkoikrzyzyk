@@ -9,5 +9,9 @@ var game = {
 	addPlayer: function(name) {
 		// Dodajemy gracza do tablicy.
 		this.players.push(name);
+
+		if (this.players.length == 2) {
+			console.log('Game started');
+		}
 	}
 };
