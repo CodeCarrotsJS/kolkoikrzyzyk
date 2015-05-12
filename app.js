@@ -5,5 +5,9 @@ var game = {
 		[null,null,null],
 		[null,null,null]
 	],
-	players: []
+	players: [],
+	addPlayer: function(name) {
+		// Dodajemy gracza do tablicy.
+		this.players.push(name);
+	}
 };
