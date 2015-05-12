@@ -1,5 +1,5 @@
 var game = {
-	activePlayer: null,
+	activePlayerIndex: null,
 	table: [
 		[null,null,null],
 		[null,null,null],
@@ -12,6 +12,7 @@ var game = {
 
 		if (this.players.length == 2) {
 			console.log('Game started');
+			this.activePlayerIndex = 0;
 		}
 	}
 };
